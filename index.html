@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang = "pt-br">
+    
+    <head>
+        <title>Revisão básica de web</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="revisão, web">
+    </head>
+
+    <header>
+        <h1>Título da página</h1>
+        <nav>
+            MENU DE NAVEGAÇÃO
+        </nav>
+    </header>
+    
+    <section>
+        <h2>Súbtitulo</h2>
+        <p>Primeiro paragrafo</p>
+        <figure>
+            COLOCAR UMA IMAGEM
+        </figure>
+    </section>
+
+    <section>
+        <h2>Exemplo de tabela</h2>
+        <table width="500" border="1">
+            <thead>
+                <tr>
+                    <th>Colunar 1</th>
+                    <th>Colunar 2</th>
+                    <th>Colunar 3</th>
+                    <th>Colunar 4</th>
+                </tr> <!-- primeira linha -->
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Linha 2 col 1</td>
+                    <td colspan="2">Linha 2 col 2 e 3</td>
+                    <td>Linha 2 col 4</td>
+                </tr><!-- segunda linha -->
+                <tr>
+                    <td rowspan="2">Linha 3 e 4 col 1</td>
+                    <td>Linha 3 col 2</td>
+                    <td>Linha 3 col 3</td>
+                    <td>Linha 3 col 4</td>
+                </tr><!-- terceira linha -->
+                <tr>
+                    <td>Linha 4 col 2</td>
+                    <td>Linha 4 col 3</td>
+                    <td>Linha 4 col 4</td>
+                </tr><!-- quarta linha -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>ultima linha col 1</td>
+                    <td>ultima Linha 2 col 2</td>
+                    <td>ultima Linha 2 col 3</td>
+                    <td>ultima Linha 2 col 4</td>
+                </tr><!-- ultima linha -->
+            </tfoot>
+        </table>
+    </section>
+
+    <section>
+        <h2>Exemplo de formulário</h2>
+        <form id = "formulario-exemplo" method="POST" action="">
+            <fieldset>
+                <legend>Dados pessoais:</legend>
+                <label for = "name">Nome completo</label>
+                    <input type = "text" id="nome"><br>
+                <label for = "genger">Gênero</label>
+                    <input type="radio" name="genger" value="masculino">Masculino
+                    <input type="radio" name="genger" value="feminino"> Feminino<br>
+                <label for = "vagabundagens"></label>Tempo livre:
+                    <input type="checkbox" name="vagabundagens" value="videogame">Video-Game
+                    <input type="checkbox" name="vagabundagens" value="fodase">Fodase
+                    <input type="checkbox" name="vagabundagens" value="cagar">Cagar<br>
+            </fieldset>
+                <label for = "foto"></label><br>
+                <input type="file" id="foto"><br>
+            <label for = "selecionar">Selecionar alguma parada ai</label>
+                <select name="selecionar" id="selecionar">
+                    <optgroup label="numeros">
+                        <option value="1">Opção 1</option>
+                        <option value="2">Opção 2</option>
+                        <option value="3">Opção 3</option>
+                    </optgroup>
+                    <optgroup label="letras">
+                        <option value="A">Opção A</option>
+                        <option value="B">Opção B</option>
+                        <option value="C">Opção C</option>
+                    </optgroup>
+                </select><br>
+            <label for = "textao">Textão:</label><br>                   
+                <textarea cols = "50" rows = "10" id = "textao"></textarea><br><br>
+            <label for = "nomes-cachorros">Qual o melhor nome de cachorro?</label>
+                <input list="nomes-cachorros" name="nome-cachorro">
+                <datalist id = "nomes-cachorros">
+                    <option value="Heleno">Heleno</option>
+                    <option value="Radar">Radar</option>
+                    <option value="FlóFló">FlóFló</option>
+                    <option value="Oliver">Oliver</option>
+                </datalist>
+            <input type="submit" value="enviar">
+            <input type="reset" value="apagar dados">
+            <input type="button" value="fodase">
+            <progress max="100" value="25"></progress>
+        </form>
+    </section>
+    <footer>
+        Criado por Gabriel lopes
+    </footer>
+    
+
+
+</html>
+
