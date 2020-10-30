@@ -1,0 +1,83 @@
+@media screen 
+{
+  article {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 2px solid black;
+  }
+  
+  .padrao {
+    position: relative;
+    padding: 5px;
+    top: 5px;
+    left: 5px;
+    border-width: 2px;
+    border-style: solid;
+  }
+  div.logo {
+    border-color: yellow;
+    background-repeat: no-repeat;
+    background-position: center; 
+  }
+  
+  header {
+    border-color: blue;
+  }
+  
+  section {
+    border-color: green;
+  }
+}
+
+@media screen and (min-width: 700px)
+{
+  article {
+    width: 700px;
+    height: 340px;
+  }
+  
+  div.logo {
+    width: 570px;
+    background-image: url('imagens/logofiap_grande.png');
+    height: 90px;
+  }
+  
+  header {
+    width: 570px;
+  }
+  
+  section {
+    width: 570px;
+  }
+
+  aside {
+    position: relative;
+    top: -326px;
+    left: 590px;
+    width: 90px;
+    height: 317px;
+    border: 2px solid red;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-device-width: 360px) 
+/*Samsung Galaxy S4*/
+{
+  header p, header time, aside {
+    display:none;
+  }
+  article {
+    width: 340px;
+    height: 340px;
+  }
+  div.logo {
+    width: 315px;
+    background-image: url('imagens/logofiap_pequeno.png');
+    height: 90px;
+  }
+  header, section {
+    width: 315px;
+  }
+}

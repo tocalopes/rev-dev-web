@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8"/>
+	<title> Retângulo/Quadrado</title>
+	</head>
+<body>
+	<canvas id="pairulito" width="800" height="400" style="border: #F00 solid 1px;"> </canvas>  
+	<script>  
+		var canvas = document.getElementById('pairulito'); 
+		var ctx = canvas.getContext('2d');
+
+        //ROSTO
+        ctx.beginPath();
+        ctx.fillStyle = '#F6D8CE';
+        ctx.arc(400,200,150,0,Math.PI * 2,true);
+        ctx.fill();
+
+        //CONTORNO DO ROSTO
+        ctx.beginPath();
+        ctx.StrokeStyle = '#000';
+        ctx.lineWidth = 5;
+        ctx.arc(400,200,150,0,Math.PI * 2,true);
+        ctx.stroke();
+
+        //OLHO ESQUERDO
+        ctx.beginPath();
+        ctx.fillStyle = "#FFF";
+        ctx.arc(380,160,30,0,Math.PI * 2,true);
+        ctx.fill();
+
+        //CONTORNO OLHO
+        ctx.beginPath();
+        ctx.StrokeStyle = "#000";
+        ctx.lineWidth = 2.5;
+        ctx.arc(380,160,27.5,0,Math.PI * 2,true);
+        ctx.stroke();
+
+        //OLHO direito
+        ctx.beginPath();
+        ctx.fillStyle = "#FFF";
+        ctx.arc(437,160,30,0,Math.PI * 2,true);
+        ctx.fill();
+
+        //CONTORNO direito
+        ctx.beginPath();
+        ctx.StrokeStyle = "#000";
+        ctx.lineWidth = 2.5;
+        ctx.arc(437,160,27.5,0,Math.PI * 2,true);
+        ctx.stroke();
+
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+div
+{
+    font-size: 1.3em;
+    width: 100px;
+    height: 100px;
+    border: 5px solid;
+}
+
+#caixa1{
+    border-color: blue;
+    color: blue;
+    display:none;
+}
+
+#caixa2
+{
+    border-color: red;
+    color: red;
+    display: block;
+}
+
+#caixa3{
+    border-color: green;
+    color: green;
+    display: inline;
+}
+
+#caixa4{
+    border-color: black;
+    color: black;
+    display: inline;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8"/>
+	<title> Retângulo/Quadrado</title>
+	</head>
+<body>
+	<canvas id="minha-tela" width="800" height="400" style="border: #F00 solid 1px;"> </canvas>  
+	<script>  
+		var canvas = document.getElementById('minha-tela'); 
+		var ctx = canvas.getContext('2d');
+		//quadrado azul com x=200 e y=100
+		ctx.font="20px Arial";
+        ctx.strokeText("este texto não tem alinhamento",10,50);
+        //x
+        ctx.moveTo(0,300);
+        ctx.lineTo(800,300);
+        ctx.stroke();
+
+        ctx.textBaseline = 'top';
+        ctx.fillText("Alinhamento top.", 50,300);
+        ctx.textBaseline = 'middle';
+        ctx.fillText("Alinhamento middle.", 300,300);
+        ctx.textBaseline = 'bottom';
+        ctx.fillText("Alinhamento bottom", 550, 300);
+        ctx.translate(750,0);
+        ctx.rotate(Math.PI/2);
+        ctx.font = "25px Courier";
+        ctx.fillText("texto na vertilcal",10,0);
+    </script>
+
+<canvas id="minha-tela2" width="800" height="400" style="border: #F00 solid 1px;"> </canvas>  
+<script>  
+    var canvas = document.getElementById('minha-tela2'); 
+    var ctx = canvas.getContext('2d');
+    var imagem = new Image(225, 225);
+    imagem.src = 'bob-esponja.png';
+    ctx.drawImage(imagem, 100, 50, 225, 225);
+    ctx.translate(600,50);
+    ctx.rotate(45 * Math.PI / 180);
+    ctx.drawImage(imagem, 0, 0, 225, 225);
+
+</script>
+
+</body>
+</html>

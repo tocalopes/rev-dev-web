@@ -1,0 +1,34 @@
+div
+{
+  font-size: 1.3em;
+  padding: 4px;
+  width: 100px; height: 100px;
+  color: white;
+}
+
+#caixa1
+{
+  background-color: blue;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 7;
+}
+
+#caixa2
+{
+  background-color: red;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 3;
+}
+
+#caixa3
+{
+  background-color: green;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  
+}
