@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8"/>
+	<title> request animation frame</title>
+	</head>
+<body>
+	<canvas id="minha-tela" width="800" height="400" style="border: #F00 solid 1px;"> </canvas>  
+	<script>  
+		var canvas = document.getElementById('minha-tela'); 
+		var ctx = canvas.getContext('2d');
+        
+        const KEY_UP = 38;
+        const KEY_DOWN = 40;
+        const KEY_LEFT = 37;
+        const KEY_RIGHT = 39;
+
+        var x = 0;
+        var y = 150;
+
+        requestAnimationFrame(gameLoop);
+        window.onkeydown = pressKey;
+
+        function pressKey(key){
+            if(key.keyCode == KEY_UP) y -= 5;
+            if(key.keyCode == KEY_DOWN) y += 5;
+            if(key.keyCode == KEY_RIGHT) x += 5;
+            if(key.keyCode == KEY_LEFT) x -= 5;
+        }
+
+        function gameLoop(){
+            drawSquare(x,y);
+            requestAnimationFrame(gameLoop);
+        }
+
+        function drawSquare(x,y){
+            ctx.clearRect(0,0,800,400);
+            ctx.fillStyle = '#FF0';
+            ctx.fillRect(x,y,100,100);
+        }
+
+
+     </script>
+
+</body>
+</html>

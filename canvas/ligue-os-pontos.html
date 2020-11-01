@@ -49,6 +49,33 @@
         ctx.arc(437,160,27.5,0,Math.PI * 2,true);
         ctx.stroke();
 
+        //pupila ESQUERDO
+        ctx.beginPath();
+        ctx.fillStyle = "#000";
+        ctx.arc(380,160,5,0,Math.PI * 2,true);
+        ctx.fill();
+
+        //pupila direita
+        ctx.beginPath();
+        ctx.fillStyle = "#000";
+        ctx.arc(437,160,5,0,Math.PI * 2,true);
+        ctx.fill();
+
+        //nariz
+        ctx.beginPath();
+        ctx.StrokeStyle = "#000";
+        ctx.lineWidth = 2.5;
+        ctx.moveTo(420,180);
+        ctx.lineTo(400,260);
+        ctx.arc(390,260,10,0,Math.PI,false);
+        ctx.lineTo(400,180);
+        ctx.stroke();
+
+
+
+
+        
+
 
     </script>
 
